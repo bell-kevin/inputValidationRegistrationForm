@@ -1,17 +1,28 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { View, Text, StyleSheet, TextInput, Button } from 'react-native';
 import { UserContext } from '../context/userContext';
 
 const NameScreen = ({ navigation }) => {
   const { firstName, lastName, setFirstName, setLastName } = useContext(UserContext);
+  const [isValid, setIsValid] = useState(false);
+  const [firstNameHasLetter, setFirstNameHasLetter] = useState(false);
+  const [lastNameHasLetter, setLastNameHasLetter] = useState(false);
+  const [showError, setShowError] = useState(false);
 
   const handleFirstNameChange = (text) => {
-    console.log(setFirstName);
-    setFirstName(text);
+    setFirstName(text.trim());
+    setFirstNameHasLetter(/[a-zA-Z]/.test(text.trim()));
+    setShowError(!firstNameHasLetter || !lastNameHasLetter);
   };
 
   const handleLastNameChange = (text) => {
-    setLastName(text);
+    setLastName(text.trim());
+    setLastNameHasLetter(/[a-zA-Z]/.test(text.trim()));
+    setShowError(!firstNameHasLetter || !lastNameHasLetter);
+  };
+
+  const handleNextPress = () => {
+    navigation.navigate("Phone");
   };
 
   return (
@@ -29,13 +40,18 @@ const NameScreen = ({ navigation }) => {
         value={lastName}
         onChangeText={handleLastNameChange}
       />
+      {showError && (
+        <Text style={styles.errorText}>Please enter a first and last name</Text>
+      )}
       <Button
         title="Next"
-        onPress={() => navigation.navigate("Phone")}
+        onPress={handleNextPress}
+        disabled={!firstNameHasLetter || !lastNameHasLetter}
       />
     </View>
   );
 };
+
 
 const styles = StyleSheet.create({
   contentContainer: {
@@ -58,6 +74,12 @@ const styles = StyleSheet.create({
     marginVertical: 8,
     paddingHorizontal: 10,
     fontSize: 18,
+  },
+  errorText: {
+    color: 'red',
+    marginBottom: 8,
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
 });
 
