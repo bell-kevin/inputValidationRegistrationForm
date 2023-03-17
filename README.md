@@ -6,21 +6,21 @@ Begin by making a COPY of the previous project.
 
 On each screen, remove the heading about using a reducer. On the first screen, change the heading to "Account Registration", and change it to one button that says "Begin", which takes the user to the Names screen. On the phone screen, the placeholder needs to change to show an example of valid input. On the email screen, change the keyboard type to "email-address", so the "@" symbol is on that keyboard.  Here are screenshots showing the changes on the home and phone screens:
 
-FormInput-1.PNG     formInput-4.PNG    
+![F](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/readMeExamplePictures/FormInput-1.PNG)    ![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/readMeExamplePictures/formInput-4.PNG)   
 
  
 
 Add a text component below the Next button on the 3 input screens, which will appear when the screen does not validate. When that text is present, the Next button will not work. Here are examples. The image on the left shows the screen when it first appears -- since both fields are empty, there are errors. The image on the right shows the screen when there is an error -- here, the last name is still empty.
 
-formInput-2.PNG     formInput-3.PNG
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/readMeExamplePictures/formInput-2.PNG)     ![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/readMeExamplePictures/formInput-3.PNG)
 
 In the next image on the left, the phone number is incorrect because it is missing content -- it is not long enough. The example in the placeholder shows the pattern expected (see above). In the image on the right, the email address is incorrect because there is no "@" symbol. Note that the keyboard has an "@" symbol because the keyboard type is specific to email addresses.
 
-formInput-5.PNG     formInput-6.PNG
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/readMeExamplePictures/formInput-5.PNG)     ![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/readMeExamplePictures/formInput-6.PNG)
 
  
 
-Validations
+### Validations
 
 The Name screen has two fields on it, and each one must have a length that is greater than 0. You saw this in the Udemy course -- trim the string, then check if the length is more than 0.
 
