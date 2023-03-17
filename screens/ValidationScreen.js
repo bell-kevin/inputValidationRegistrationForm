@@ -82,4 +82,3 @@ const ValidationScreen = ({ navigation }) => {
 };
 
 export default ValidationScreen;
-
