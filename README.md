@@ -68,7 +68,7 @@ https://reactnative.dev/docs/components-and-apis
 
 https://reactnative.dev/docs/intro-react
 
-Check out App.js here in the code files for the computer algorithm code.
+Check out App.js here in the code files for the computer algorithm code
 
 ## Storing Projects
 
