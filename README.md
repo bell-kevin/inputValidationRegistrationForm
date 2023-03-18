@@ -36,6 +36,18 @@ Take 5 screenshots: the first screen (black one above), the Names screen with er
 
 Submission: Zip together the root folder and the 5 screenshots, and submit the single zipped folder.
 
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/screenshots/1.PNG)
+
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/screenshots/2.PNG)
+
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/screenshots/3.PNG)
+
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/screenshots/4.PNG)
+
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/screenshots/5.PNG)
+
+![p](https://github.com/bell-kevin/inputValidationRegistrationForm/blob/main/screenshots/6.PNG)
+
 ## How to:
 
 Create one app. for both Android and iOS (Apple) using one computer alorithm for both apps. You'll need Visual Studio Code and Android Studio to get started:
